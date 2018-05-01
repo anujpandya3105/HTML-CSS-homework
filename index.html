@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Visualization Dashboard</title>
+  
+  <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!-- <nav class="navbar" </nav> -->
+    <nav class="navbar navbar-header navbar-expand-lg navbar-light bg-light">
+      <ul>
+        <li>
+          <a href="#">Lattitude</a>
+        </li>
+               
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="visualize-temp.html">Temperature</a></li>
+            <li><a href="visualize-humiditymap.html">Humidity</a></li>
+            <li><a href="visualize-cloudymap.html">Cloudiness</a></li>
+            <li><a href="visualize-windmap.html">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li><a href="comparisons.html">Comparison</a></li>
+        <li><a href="Data.htm">Data</a></li>
+
+
+     </ul>
+  </div>
+
+  <div class="container">
+        <div class = "row">
+            <div class="col-sm-8">
+            <h3> Summary: Latitude vs. X </h3>
+            <br></br>
+            
+            <img id="temperature-image" src="temperaturemap.png" alt="TemperatureMap" height="250" width="400", float:left, margin: 0 80px 80px 0;>
+            
+            <p The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, windspeed and humidity This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and corelations witnessed. </p>
+            </div> 
+        
+            <div class="col-sm-4">
+                <h3> Visualizations</h3>
+                <br></br>
+                <img id="temperature-image" src="temperaturemap.png" alt="TemperatureMap" height="140" width="140">
+                <img id="temperature-image" src="humiditymap.png" alt="HumidityMap" height="140" width="140">
+                <img id="temperature-image" src="cloudymap.png" alt="CloudyMap" height="140" width="140">
+                <img id="temperature-image" src="windmap.png" alt="WindMap" height="140" width="140">
+            </div>
+        </div>
+   </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>  
+
+</html>
